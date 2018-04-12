@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+main()
+{
+  int a,b,c;
+  float s,s1,area;
+  printf("enter the three sides of the triangle:");
+  scanf("%d%d%d",&a,&b,&c);
+  s=(a+b+c)/2;
+  s1=s*(s-a)*(s-b)*(s-c);
+  area=sqrt(s1);
+  printf("the area of the triangle having different sides is %f",&a);
+  getch();
+ }
+ 
