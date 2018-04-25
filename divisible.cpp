@@ -2,17 +2,16 @@
 #include<conio.h>
 main()
 {
-	int a,num;
+	int a;
 	printf("Enter any number by user:");
 	scanf("%d",&a);
-	num=a%3;num=a/3;
-	if(num==1)
+	if(a%2==1&&a%3==0)
 	{
 		printf("The given number is odd and divisible by 3");
 	}
 	else
 	{
-		printf("The given number is even");
+		printf("The given number is either even or not divisible by 3");
 	}
 	getch();
 }
